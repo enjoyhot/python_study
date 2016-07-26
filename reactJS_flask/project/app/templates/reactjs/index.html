@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block reactjs %}
+<!-- <script src="{{ url_for('static',filename='js/build/react.js') }}"></script> -->
+<!-- <script src="{{ url_for('static',filename='js/build/react-dom.js') }}"></script> -->
+<!-- <script src="{{ url_for('static',filename='js/build/browser.min.js') }}"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script> -->
+<!-- <script src="{{ url_for('static',filename='js/build/react-chartjs.min.js') }}"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script> -->
+{% endblock reactjs %}
+
+{% block css %}
+<link href="{{ url_for('static', filename='bower_components/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
+<!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+{% endblock css %}
+
+{% block tools %}
+<a href="#"><strong><i class="glyphicon glyphicon-wrench"></i> Tools</strong></a>
+
+<hr>
+
+<ul class="nav nav-stacked">
+    <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#userMenu">Settings <i class="glyphicon glyphicon-chevron-right"></i></a>
+        <ul class="nav nav-stacked collapse" id="userMenu">
+            <li> <a href="#"><i class="glyphicon glyphicon-home"></i> Home</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-envelope"></i> Messages <span class="badge badge-info">4</span></a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-cog"></i> Options</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-comment"></i> Shoutbox</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-user"></i> Staff List</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-flag"></i> Transactions</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-exclamation-sign"></i> Rules</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-off"></i> Logout</a></li>
+        </ul>
+    </li>
+    <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#menu2"> Reports <i class="glyphicon glyphicon-chevron-down"></i></a>
+
+        <ul class="nav nav-stacked collapse in" id="menu2">
+            <li><a href="/cls/logistic">LogisticRegression</a>
+            </li>
+            <li><a href="#">Views</a>
+            </li>
+            <li><a href="#">Requests</a>
+            </li>
+            <li><a href="#">Timetable</a>
+            </li>
+            <li><a href="#">Alerts</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-header">
+        <a href="#" data-toggle="collapse" data-target="#menu3"> Social Media <i class="glyphicon glyphicon-chevron-right"></i></a>
+        <ul class="nav nav-stacked collapse" id="menu3">
+            <li><a href=""><i class="glyphicon glyphicon-circle"></i> Facebook</a></li>
+            <li><a href=""><i class="glyphicon glyphicon-circle"></i> Twitter</a></li>
+        </ul>
+    </li>
+</ul>
+
+<hr>            
+{% endblock tools %}
+
+{% block sm9 %}
+       
+<div>
+        <h1>logistic</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>     
+        <div id="content"></div>
+
+        <div class="panel panel-default">        
+            <div class="panel-heading">
+                <div class="panel-title">
+                    <i class="glyphicon glyphicon-wrench pull-right"></i>
+                    <h4>Param Settings</h4>
+                </div>
+            </div>
+            <div id='logistic-form' class="panel-body">
+            </div>
+            <!--/panel content-->
+        </div>  
+</div>
+
+{% endblock sm9 %}
+
+{% block script %}
+<script src="{{ url_for('static', filename='bower_components/jquery/dist/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+<script src="{{ url_for('static', filename='js/reactjs/main.js') }}"></script>
+{% endblock script %}

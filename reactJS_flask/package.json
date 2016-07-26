@@ -1,0 +1,38 @@
+{
+  "name": "1",
+  "version": "0.0.0",
+  "description": "Flask + ReactJS + ChartJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lkoczwara/ReactJS_Dashboard.git"
+  },
+  "author": "carrod",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/lkoczwara/ReactJS_Dashboard/issues"
+  },
+  "devDependencies": {
+    "babelify": "^7.3.0",
+    "bower": "~1.7.2",
+    "browserify": "^13.0.1",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "~0.5.1",
+    "gulp-clean": "~0.3.1",
+    "gulp-size": "~2.0.0",
+    "reactify": "~1.1.1",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "chart.js": "^1.1.1",
+    "chartjs": "~0.2.6",
+    "react": "^0.14.8",
+    "react-chartjs": "^0.6.0",
+    "react-dom": "^0.14.8"
+  },
+  "homepage": "https://github.com/lkoczwara/ReactJS_Dashboard#readme"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "ReactJS_Dashboard",
+  "description": "Flask + ReactJS + ChartJS",
+  "main": "index.js",
+  "authors": [
+    "lukaszkoczwara <lukasz.koczwara@stxnext.pl>"
+  ],
+  "license": "BSD-2-Clause",
+  "homepage": "https://github.com/lkoczwara/ReactJS_Dashboard",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "jquery": "~2.1.4"
+  }
+}
